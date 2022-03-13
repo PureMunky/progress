@@ -10,14 +10,14 @@
     var weeksLeft = (deathday.getTime() - today.getTime()) / msPerWeek;
 
     var out = '';
-    for(var i = 0; i < weeksPassed + weeksLeft; i++) {
+    for(var i = 1; i < weeksPassed + weeksLeft; i++) {
         if(i < weeksPassed) {
             out += '<span class="chit filled">&nbsp;</span>';
         } else {
             out += '<span class="chit">&nbsp;</span>';
         }
 
-        if(i % 52 == 0 && i != 0) {
+        if(i % 52 == 0) {
             out += '<br/>';
         }
     }
