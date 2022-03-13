@@ -6,6 +6,10 @@
 
     btnCalculate.click = calc;
 
+    btnCalculate.addEventListener('click', function() {
+        calc();
+    });
+
 
     function calc() {
         var today = new Date();
