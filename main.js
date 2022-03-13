@@ -12,13 +12,13 @@
     var out = '';
     for(var i = 0; i < weeksPassed + weeksLeft; i++) {
         if(i < weeksPassed) {
-            out += '[X]';
+            out += '<span class="chit filled">&nbsp;</span>';
         } else {
-            out += '[ ]';
+            out += '<span class="chit">&nbsp;</span>';
         }
 
-        if(i % 52 == 0) {
-            out += '</br/>';
+        if(i % 52 == 0 && i != 0) {
+            out += '<br/>';
         }
     }
 
